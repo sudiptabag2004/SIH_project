@@ -244,3 +244,101 @@ header {
     font-weight: bold;
     color: #ffcc00;
 }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    header {
+        padding: 10px 10px; /* Reduce header padding for smaller screens */
+    }
+
+    .navbar {
+        display: none; /* Hide the desktop navigation menu */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex; /
+    }
+
+    .navbar li {
+        padding: 10px 0;
+        margin: 0; 
+    }
+
+    .container {
+        width: 100%; 
+        padding: 10px; 
+        
+    }
+
+    .para {
+        font-size: 25px; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .jerry {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .grid-item img {
+        width: 90%; 
+        height:105%;
+    }
+
+    .overlay {
+        width: 100%; 
+    }
+
+    .slider-container {
+        width: 100%; 
+        overflow: hidden;
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 1s ease-in-out;
+        width: 300%; 
+    }
+
+    .slider img {
+        width: 85%; 
+        height: 60%;
+    }
+
+    .contact-form {
+        max-width: 100%; 
+    }
+
+    .stats-container {
+        padding: 10px; 
+    }
+
+    .stats-item {
+        margin: 10px 0; 
+        font-size: 20px; 
+    }
+    .grid-container {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+    .merry{
+        font-size: 25px;
+    }
+
+}
